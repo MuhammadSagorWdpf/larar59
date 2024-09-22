@@ -90,7 +90,8 @@ class ProductController extends Controller
         $ProductData=Product::paginate(5);
         return view('product',compact('ProductData'));
     }
-
-    /* Sell price */
     
+    
+    /* Sell price */
+   
 }

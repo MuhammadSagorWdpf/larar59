@@ -36,8 +36,10 @@ tr:nth-child(even) {
                     <th>Name</th>
                     <th>Details</th>
                     <th>Price</th>
-                    <th>Stock</th>
                     <th>Discount</th>
+                
+                    <th>Stock</th>
+                    <th>Sellable Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,8 +49,9 @@ tr:nth-child(even) {
                     <td>{{$product->name}}</td>
                     <td>{{$product->details}}</td>
                     <td>{{$product->price}}</td>
-                    <td>{{$product->stock}}</td>
                     <td>{{$product->discount}}</td>
+                    <td>{{$product->stock}}</td>
+                    <td>{{$product->price-$product->discount}}</td>
                 </tr>
                 @endforeach
             </tbody>
