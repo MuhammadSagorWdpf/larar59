@@ -83,4 +83,14 @@ class ProductController extends Controller
     {
         //
     }
+
+    /* Fetching Product */
+    public function fetchProduct()
+    {
+        $ProductData=Product::paginate(5);
+        return view('product',compact('ProductData'));
+    }
+
+    /* Sell price */
+    
 }
