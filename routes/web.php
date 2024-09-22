@@ -22,3 +22,8 @@ Route::get('/', function () {
 Route::get('/pagination',[CustomerController::class,'getData']);
 
 Route::get('/product',[ProductController::class,'fetchProduct']);
+
+
+Route::get('/myform', function () {
+    return view('form');
+});
